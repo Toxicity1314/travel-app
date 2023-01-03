@@ -1,11 +1,11 @@
 import React from "react";
 
-function Test() {
+function People() {
   return (
     <h1>
-        I did the test
+        I got to people
     </h1>
   );
 }
 
-export default Test;
+export default People;
