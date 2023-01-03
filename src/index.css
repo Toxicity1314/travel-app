@@ -8,10 +8,8 @@
 }
 
 .button.active,
-.button:hover,
-button.active,
-button:focus,
-button:hover {
+.button:hover
+{
   outline: none;
   background-color: #55c2da;
   border: solid;
