@@ -1,10 +1,13 @@
-import React from "react";
+import React, {useState} from "react";
+import People from "./People";
+import LogIn from "./LogIn";
 
-function Home() {
+function Home(props) {
   return (
-    <h1>
-        I am home
-    </h1>
+    <div>
+      <h1 style={{textAlign: "center"}}>Welcome to the travel App {props.loggedIn ? props.currentUser[0].name: ""}</h1>
+      {props.loggedIn ? <People people={props.currentUser}/>:<LogIn {...props} />}
+    </div>
   );
 }
 
