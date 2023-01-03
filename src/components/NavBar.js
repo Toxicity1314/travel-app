@@ -1,13 +1,14 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import { Button } from "./styles";
 
 function NavBar() {
   return (
     <header>
-        <NavLink className="button" to="/">home</NavLink>
-        <NavLink className="button" to="/people">people</NavLink>
-        <NavLink className="button" to="/places">places</NavLink>
-        <NavLink className="button" to="/activities">activities</NavLink>
+        <Button as={NavLink} exact to="/">home</Button>
+        <Button as={NavLink} to="/people">people</Button>
+        <Button as={NavLink} to="/places">places</Button>
+        <Button as={NavLink} to="/activities">activities</Button>
         
     </header>
   );
