@@ -1,0 +1,94 @@
+{
+
+    "people": [
+        {
+            "id": 1,
+            "name": "Sean Welsh",
+            "home": "Maryland",
+            "current": "Fredericksburg",
+            "username": "sean",
+            "password": "password"
+        },
+        {
+            "id": 2,
+            "name": "Alexander Spagnoli",
+            "home": "Reston",
+            "current": "San Juan",
+            "username": "jandro",
+            "password": "password"
+        }
+    ],
+
+    "places": [
+        {
+            "id": 1,
+            "city": "Cairo",
+            "country": "Egypt",
+            "image": "https://d3rr2gvhjw0wwy.cloudfront.net/uploads/mandators/49581/file-manager/cairo-city-egypt-2020.jpg"
+        },
+        {
+            "id": 2,
+            "city": "San Juan",
+            "country": "Puerto Rico",
+            "image": ""
+        },
+        {
+            "id": 3,
+            "city": "Rincon",
+            "country": "Puerto Rico",
+            "image": ""
+        },
+        {
+            "id": 4,
+            "city": "Rome",
+            "country": "Italy",
+            "image": ""
+        },
+        {
+            "id": 5,
+            "city": "Shenandoah",
+            "country": "USA",
+            "image": ""
+        },
+        {
+            "id": 6,
+            "city": "Tokyo",
+            "country": "Japan",
+            "image": ""
+        }
+    ],
+
+    "activities": [
+        {
+            "id": 1,
+            "title": "Surfing Lessons",
+            "city": "Rincon",
+            "country": "Puerto Rico",
+            "address": "Rincon surfing lessons - Rincon, Puerto Rico",
+            "tag": "Beach"
+        },
+        {
+            "id": 2,
+            "title": "Colosseum",
+            "city": "Rome",
+            "country": "Italy",
+            "address": "Colosseo - Roma, IT",
+            "tag": "Historic"
+        },
+        {
+            "id": 3,
+            "title": "White Oak Canyon Lower Falls",
+            "city": "Syria",
+            "country": "USA",
+            "address": "WHITE OAK CANYON LOWER FALLS - SYRIA, VA",
+            "tag": "Hiking"
+        },
+        {
+            "id": 4,
+            "title": "Pyramids of Giza",
+            "city": "Cairo",
+            "country": "Egypt",
+            "address": "Historic"
+        }
+    ]
+}

@@ -1,4 +1,5 @@
 import React from "react";
+import FormPeople from "./FormPeople";
 
 function People() {
   return (
