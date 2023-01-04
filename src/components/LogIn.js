@@ -8,6 +8,8 @@ function LogIn({setCurrentUser, people, setLoggedIn, loggedIn}){
         if(formData.userName=== person.username && formData.password === person.password){
           setLoggedIn(!loggedIn)
           return true
+        }else{
+          return false
         }
       }))
     }
