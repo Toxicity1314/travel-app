@@ -11,17 +11,18 @@ import SearchPeople from "./SearchPeople";
 
 function App() {
 
-
   // set Login or Create Profile upon screen refresh.
   // -> make sure the above can be changed with a "switch user" button that just triggers a page refresh
 
   // FETCHES DB.JSON
+  const [loggedIn, setLoggedIn] = useState(false)
+  const [currentUser, setCurrentUser] = useState({})
   const [people, setPeople] = useState([])
-  useEffect(() => {
-    fetch("http://localhost:3000/people")
-      .then(resp => resp.json())
-      .then(data => setPeople(data))
-  }, [])
+  useEffect(()=>{
+    fetch('http://localhost:4000/people' )
+      .then(res => res.json())
+      .then(people => setPeople(people))
+  },[])
 
   const [places, setPlaces] = useState([])
   useEffect(() => {
@@ -37,37 +38,6 @@ function App() {
       .then(data => setActivities(data))
   }, [])
 
-
-  // SEARCH set up <Search /> functionality
-  const [searchPeople, setSearchPeople] = useState("")
-  const displayedPeople = people.filter((person) => {
-    return person.name.toLowerCase().includes(searchPeople.toLowerCase())
-  })
-
-
-  // FORM SET-UP
-  function handleAddPeople(newPeople) {
-    const updatedPeopleArray = [...people, newPeople]
-    setPeople(updatedPeopleArray)
-  }
-
-  function handleDeletePeople(id) {
-    const updatedPeopleArray = people.filter((person) =>
-      person.id !== id)
-      setPeople(updatedPeopleArray)
-  }
-
-  function handleUpdatePeople(updatedPeople) {
-    const updatedPeopleArray = people.map((person) => {
-      if (person.id === updatedPeople.id) {
-        return updatedPeople
-      } else {
-        return person
-      }
-    })
-    setPeople(updatedPeopleArray)
-  }
-
   return (
     <div className="App"> 
 
@@ -77,9 +47,17 @@ function App() {
 
         <Route 
           exact 
-            path="/" 
-            element={<Home />}
-        /> 
+          path="/" 
+          element={
+            <Home 
+              people={people}
+              loggedIn={loggedIn}
+              setLoggedIn={setLoggedIn}
+              currentUser={currentUser}
+              setCurrentUser={setCurrentUser}
+            />
+          }
+        />
 
         <Route 
           path='/people' 
@@ -114,8 +92,6 @@ function App() {
         people={people}
         onAddPeople={handleAddPeople}
       />
-
-      <SearchPeople />
 
     </div>
   );
