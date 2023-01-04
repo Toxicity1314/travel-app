@@ -78,6 +78,8 @@ function App() {
             <People
               people={people}
               currentUser={currentUser}
+              setLoggedIn={setLoggedIn}
+              setPeople={setPeople}
             />
           }
         />
