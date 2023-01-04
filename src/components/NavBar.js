@@ -8,7 +8,7 @@ function NavBar({loggedIn, setLoggedIn, setCurrentUser}) {
   const handleClick = ()=>{
     setLoggedIn(!loggedIn)
     setCurrentUser(
-      [{
+      {
         id:"",
         name:"",
         city: "",
@@ -16,7 +16,7 @@ function NavBar({loggedIn, setLoggedIn, setCurrentUser}) {
         password: "",
         photo: "",
         places:[]
-      }]
+      }
     )
   }
 if(loggedIn){

@@ -17,7 +17,7 @@ function App() {
   // FETCHES DB.JSON
   const [loggedIn, setLoggedIn] = useState(false)
   const [currentUser, setCurrentUser] = useState(
-    [{
+    {
       id:"",
       name:"",
       city: "",
@@ -25,7 +25,7 @@ function App() {
       password: "",
       photo: "",
       places:[]
-  }]
+  }
   )
   const [people, setPeople] = useState([])
   useEffect(()=>{

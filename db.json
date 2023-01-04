@@ -2,7 +2,7 @@
   "people": [
     {
       "id": 1,
-      "name": "Sean ",
+      "name": "Sean Welsh",
       "city": "Fredericksburg",
       "username": "Sean1",
       "password": "Sean2",
@@ -11,7 +11,8 @@
         "Bermuda",
         "Massachusetts",
         "St Lucia",
-        "Colorado"
+        "Colorado",
+        "Florida"
       ]
     },
     {

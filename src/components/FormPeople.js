@@ -3,7 +3,7 @@ import {useNavigate} from "react-router-dom";
 import { Form, Button } from "semantic-ui-react";
 
 function FormPeople({people, loggedIn, setLoggedIn, setPeople, setCurrentUser, currentUser}) {
-    const [formData, setFormData] = useState(currentUser[0])
+    const [formData, setFormData] = useState(currentUser)
     let navigate = useNavigate()
 
     const handleSubmit = (e)=>{
@@ -22,7 +22,7 @@ function FormPeople({people, loggedIn, setLoggedIn, setPeople, setCurrentUser, c
             })
             .then(res => res.json())
             .then(()=>{
-                setCurrentUser([formData])
+                setCurrentUser(formData)
                 setPeople(people.map(person=>{
                     if(person.id ===formData.id){
                         return formData
@@ -41,7 +41,7 @@ function FormPeople({people, loggedIn, setLoggedIn, setPeople, setCurrentUser, c
             } )
             .then(res => res.json())
             .then(()=>{
-                setCurrentUser([formData])
+                setCurrentUser(formData)
                 setPeople([...people, formData])
                 setLoggedIn(!loggedIn)
             })

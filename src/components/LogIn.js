@@ -4,14 +4,15 @@ function LogIn({setCurrentUser, people, setLoggedIn, loggedIn}){
     const [formData, setFormData] = useState({userName:"", password:""})
     const handleSubmit = (e)=>{
       e.preventDefault()
-      setCurrentUser(people.filter(person =>{
+      let user = ""
+      people.forEach(person =>{
         if(formData.userName=== person.username && formData.password === person.password){
+          user=person
           setLoggedIn(!loggedIn)
-          return true
-        }else{
-          return false
-        }
-      }))
+        }})
+       
+
+      setCurrentUser(user)
     }
     const handleOnChange = (e)=>{
       setFormData({...formData, [e.target.name]: e.target.value})
