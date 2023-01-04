@@ -1,0 +1,35 @@
+{
+  "places": [
+      {
+          "id": 1,
+          "destination": "Hyatt Regency Cairo West",
+          "critical": true,
+          "category": "Hotel",
+          "directions": {
+              "type": "Point",
+              "address": "Hyatt Regency Cairo West - Cairo, Egypt",
+              "coordinates": [30.018464070149015, 31.072854135582276]
+          },
+          "notes": "Hotel where Alexander, Melissa, and Spagnolis will be staying"
+      }
+  ],
+  
+  "people": [
+      {
+          "id": 1,
+          "name": "Sean Welsh",
+          "city": "Fredericksburg",
+          "username": "Sean1",
+          "password": "Sean2",
+          "photo": "https://ca.slack-edge.com/T02MD9XTF-U04922S2211-d687e230017d-512" 
+      },
+      {
+        "id": 2,
+        "name": "Jandro",
+        "city": "Reston?",
+        "username": "Jandro1",
+        "password": "Jandro2",
+        "photo": "https://ca.slack-edge.com/T02MD9XTF-U04218SPJP5-869a62ec42de-72"
+    }
+  ]
+}

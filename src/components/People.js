@@ -1,10 +1,23 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
+import { PeopleCard } from "./styles";
 
-function People() {
+function People({people}) {
+
+
+  const peopleCard = people.map(people =>{
+    return(
+    <PeopleCard as={'ul'} key={people.name}>
+      <img src={people.photo}/>
+      <li>User: {people.name}</li>
+      <li>From: {people.city}</li>
+      <li>UserName: {people.username}</li>
+    </PeopleCard>)
+    })
+
   return (
-    <h1>
-        I got to people
-    </h1>
+    <div style={{display:"flex", margin: "1em"}}>
+        {peopleCard}
+    </div>
   );
 }
 
