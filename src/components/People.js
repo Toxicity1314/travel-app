@@ -5,28 +5,22 @@ import { Button } from "./styles";
 
 function People({people, currentUser, setLoggedIn, setPeople}) {
   const navigate=useNavigate()
-  // SEARCH set up <Search /> functionality
-  // const [searchPeople, setSearchPeople] = useState("")
-  // const displayedPeople = people.filter((person) => {
-  //   return person.name.toLowerCase().includes(searchPeople.toLowerCase())
-  // })
-  console.log(people)
 
-const handleClick = ()=>{
-  fetch(`http://localhost:4000/people/${currentUser.id}`,{
-            method: 'DELETE'
-            })
-            .then(res => res.json())
-            .then(()=>{
-                setLoggedIn(false)
-                setPeople(people.filter(person=>{
-                    if(person.id ===currentUser.id){
-                        return false
-                    }else{
-                        return true
-                    }
-                }))
-                navigate("/")    
+  const handleClick = ()=>{
+    fetch(`http://localhost:4000/people/${currentUser.id}`,{
+      method: 'DELETE'
+      })
+      .then(res => res.json())
+      .then(()=>{
+        setLoggedIn(false)
+        setPeople(people.filter(person=>{
+          if(person.id ===currentUser.id){
+            return false
+          }else{
+            return true
+          }
+        }))
+        navigate("/")    
       })
 }
   let peopleCard
@@ -69,5 +63,3 @@ const handleClick = ()=>{
 }
 
 export default People;
-
-// <SearchPeople />
