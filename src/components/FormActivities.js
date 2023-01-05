@@ -1,5 +1,4 @@
 import React, {useState} from "react";
-// import {useNavigate} from "react-router-dom";
 import { Form } from "semantic-ui-react";
 
 function FormActivities({
@@ -36,7 +35,7 @@ function FormActivities({
 
     return (
         <div>
-            <h3>Add an Activity!</h3>
+            <h3>Add an Activity</h3>
             <Form onSubmit={handleActivitiesSubmit}>
                 <Form.Group widths="equal">
                     <Form.Input fluid

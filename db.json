@@ -18,57 +18,56 @@
     },
     {
       "id": 2,
-      "name": "Jandro Spagnoli Pagan",
+      "name": "Jandro Spagnoli",
       "city": "Reston",
       "username": "ajspaghetti",
-      "password": "travelApp",
+      "password": "password",
       "photo": "https://media.licdn.com/dms/image/C4E03AQG6l11IxkDizw/profile-displayphoto-shrink_800_800/0/1607421640755?e=1678320000&v=beta&t=cNc0WYTd5Jt8ksAVjTl9KVSUNqmcSyt13aQP8RtfEP8",
       "places": [
-        "DC",
-        "Puerto Rico",
-        "Italy"
+        "Washington DC",
+        "San Juan",
+        "Rome"
       ]
     },
     {
       "id": 3,
       "name": "Olivia Perez",
       "city": "New York",
-      "username": "Olivia_NYC",
-      "password": "Olivia2",
+      "username": "olivia_nyc",
+      "password": "password",
       "photo": "https://ca.slack-edge.com/T02MD9XTF-U04AV06M5QT-3ab3f0bf4a37-512",
       "places": [
         "Tokyo",
-        "South Africa",
-        "Brazil",
-        "New York"
+        "Cape Town",
+        "Rio de Janeiro"
       ]
     },
     {
       "id": 4,
       "name": "BrookeATL",
       "city": "Atlanta",
-      "username": "Brooke1",
-      "password": "Brooke2",
+      "username": "brooke1atl",
+      "password": "password",
       "photo": "https://ca.slack-edge.com/T02MD9XTF-UK933ECJJ-6c26a3d655a5-512",
       "places": [
-        "",
-        "",
-        "",
-        ""
+        "Anchorage",
+        "Cozumel",
+        "Bangkok",
+        "Reykjavik"
       ]
     },
     {
       "id": 5,
       "name": "Eleanor Kelman",
       "city": "Frederick",
-      "username": "Eleanor-K-MD",
-      "password": "Eleanor2",
+      "username": "eleanork_md",
+      "password": "password",
       "photo": "https://ca.slack-edge.com/T02MD9XTF-U048RD4TBJ4-9276d11852fb-512",
       "places": [
-        "",
-        "",
-        "",
-        ""
+        "Tel Aviv",
+        "Tokyo",
+        "Casablanca",
+        "Madrid"
       ]
     }
   ],
@@ -208,6 +207,70 @@
       ],
       "image": "https://lh5.googleusercontent.com/p/AF1QipM2DDQKiD5QqxRQRfo2Vwqoq3KyFI7LImXz8rI4=w408-h306-k-no",
       "id": 7
+    },
+    {
+      "title": "Ultra Marathon",
+      "city": "Reykjavik",
+      "country": "Iceland",
+      "address": "Engjavegur 6 104 Reykjavík Iceland ",
+      "tags": [
+        "Fitness",
+        "Outdoor"
+      ],
+      "image": "https://www.laugavegshlaup.is/_next/image?url=https%3A%2F%2Fimages.prismic.io%2Flaugarvegurinn-ultra%2Fdc88b9f3370ddbcd0a933733314cf52a28863f20_img_6698.jpg%3Fauto%3Dcompress%2Cformat%26w%3D1500&w=3840&q=75",
+      "id": 8
+    },
+    {
+      "title": "Snorkeling at Ko Phi Phi Le",
+      "city": "Phi Phi Islands",
+      "country": "Thailand",
+      "address": "Ko phi phi le - mueang krabi district",
+      "tags": [
+        "Ocean",
+        " Nature",
+        " Swimming"
+      ],
+      "image": "https://media-cdn.tripadvisor.com/media/attractions-splice-spp-720x480/07/72/ff/ec.jpg",
+      "id": 9
+    },
+    {
+      "title": "Drive Along Atlantic Ocean Drive",
+      "city": "Cape Town",
+      "country": "South Africa",
+      "address": "https://www.dangerousroads.org/cache/images/x/2/chapmansdrive0-9b04e42a.webp",
+      "tags": [
+        "Roadtrip",
+        "Scenic",
+        "Waterfront"
+      ],
+      "image": "https://www.dangerousroads.org/cache/images/x/2/chapmansdrive0-9b04e42a.webp",
+      "id": 10
+    },
+    {
+      "title": "Swim in Crystal Pools",
+      "city": "Cape Town",
+      "country": "South Africa",
+      "address": "Crystal pools - gordons bay South Africa",
+      "tags": [
+        "Water",
+        " Hiking",
+        " Nature"
+      ],
+      "image": "https://www.capetown.travel/wp-content/uploads/2022/07/kloofing-crystal-pools-1024x546.jpg",
+      "id": 11
+    },
+    {
+      "title": "Cable Car to Table Mountain",
+      "city": "Cape Town",
+      "country": "South Africa",
+      "address": "Tafelberg Rd, Gardens, Cape Town, 8001, South Africa",
+      "tags": [
+        "Mountains",
+        "Views",
+        "Attraction"
+      ],
+      "image": "https://content.webtickets.co.za/cableway/banner_TableMountainCableCar.jpg",
+      "id": 12
     }
   ]
 }

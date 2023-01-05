@@ -1,7 +1,6 @@
 import React, {useState} from "react";
 // import {useNavigate} from "react-router-dom";
 import { Form } from "semantic-ui-react";
-import Places from "./Places";
 
 function FormPlaces({
 places,
@@ -30,7 +29,7 @@ setPlaces
 
     return(
         <div>
-            <h3>Add a Destination!</h3>
+            <h3>Add a Destination</h3>
             <Form onSubmit={handlePlaceSubmit}>
                 <Form.Group widths="equal">
                     <Form.Input fluid 

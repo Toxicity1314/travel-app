@@ -19,7 +19,7 @@ function LogIn({setCurrentUser, people, setLoggedIn, loggedIn}){
     }
     return(
         <form onSubmit={handleSubmit}>
-            <label>user name</label>
+            <label>username: </label>
             <input 
             type="text"
             name="userName"
@@ -27,7 +27,7 @@ function LogIn({setCurrentUser, people, setLoggedIn, loggedIn}){
             value={formData.userName}>
             </input>
             <br/>
-            <label>password</label>
+            <label>password:  </label>
             <input 
             type="password"
             name="password"
