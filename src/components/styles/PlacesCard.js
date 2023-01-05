@@ -9,7 +9,7 @@ export default styled.div`
     border: hidden;
     border-radius: 10px;
     background: #E9E186;
-    align: center;
+    text-align: center;
     
     img{
         display: block;

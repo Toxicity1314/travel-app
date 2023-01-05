@@ -82,7 +82,10 @@ placesCard = places.map(place => {
 
   return (
     <div>
-      <div style={{display:"flex", margin: "1em"}}>
+      <div style={{
+        display:"flex", 
+        margin: "1em", 
+        flexWrap:"wrap"}}>
           {placesCard}
       </div>
       <FormPlaces 
