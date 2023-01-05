@@ -1,29 +1,53 @@
-import React from "react";
-import { ActivitiesCard } from "./styles"
+import React, {useState} from "react";
+import { ActivitiesCard, Button } from "./styles"
 import FormActivities from "./FormActivities";
 
 function Activities({
   activities,
   setActivities
 }) {
-console.log(activities)
+
+  // Mark as 'Done' button
+  const [markAsDone, setMarkAsDone] = useState(false)
+  function handleDoneClick() {
+    setMarkAsDone((markAsDone) => !markAsDone)
+  }
+  
+  // Mark as 'Enjoyed' button
+  const [markEnjoyed, setMarkEnjoyed] = useState(false)
+  function handleEnjoyedClick() {
+    setMarkEnjoyed((markEnjoyed) => !markEnjoyed)
+  }
+
+
 let activitiesCard
-activitiesCard = activities.map(activities => {
+activitiesCard = activities.map(activity => {
   return (
     <ActivitiesCard 
       className="card"
       as='ul'
-      key={activities.id}>
+      key={activity.id}>
       
       <img 
-        src={activities.image} 
+        src={activity.image} 
         alt="pic"/>
-      <li>Title: {activities.title}</li>
-      <li>City: {activities.city}</li>
-      <li>Region: {activities.country}</li>
+      <li>Title: {activity.title}</li>
+      <li>City: {activity.city}</li>
+      <li>Region: {activity.country}</li>
       <li>Tags:
-          <ul>{activities.tags.map(tag=><li key={tag}>{tag}</li>)}</ul>
+          <ul>{activity.tags.map(tag=><li key={tag}>{tag}</li>)}</ul>
       </li>
+
+      <Button
+        style={{width:60, height:100}}
+        onClick={handleDoneClick}>Done?{markAsDone ? "✅" : "❌"}
+      </Button>
+
+      <Button
+        style={{width:60, height:100}}
+        onClick={handleEnjoyedClick}>Enjoyed?{markEnjoyed ? "🤩" : "😒"}
+      </Button>
+
       
     </ActivitiesCard>
 )
@@ -31,10 +55,15 @@ activitiesCard = activities.map(activities => {
 
   return (
     <div>
-      <div style={{display:"flex", margin: "1em"}}>
+      <div 
+        style={{display:"flex", margin: "1em"}}
+        >
           {activitiesCard}
       </div>
-      <FormActivities setActivities={setActivities} activities={activities}/>
+      <FormActivities 
+        setActivities={setActivities} 
+        activities={activities}
+      />
     </div>
   );
 }

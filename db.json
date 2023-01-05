@@ -114,7 +114,12 @@
       "city": "Tokyo",
       "country": "Japan",
       "image": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/gettyimages-1058360160-1-1624796189.jpg?crop=1.00xw:0.756xh;0,0.244xh&resize=980:*"
-
+    },
+    {
+      "city": "Cape Town",
+      "country": "South Africa",
+      "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/14/10/2e/1e/cape-town.jpg?w=700&h=-1&s=1",
+      "id": 7
     }
   ],
   "activities": [
@@ -165,7 +170,6 @@
         "Historic",
         "Desert"
       ]
-
     }
   ]
 }
