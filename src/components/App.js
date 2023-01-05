@@ -6,7 +6,7 @@ import People from "./People";
 import Places from "./Places";
 import Activities from "./Activities";
 import FormPeople from "./FormPeople";
-import SearchPeople from "./SearchPeople";
+
 
 
 function App() {
@@ -16,7 +16,17 @@ function App() {
 
   // FETCHES DB.JSON
   const [loggedIn, setLoggedIn] = useState(false)
-  const [currentUser, setCurrentUser] = useState({})
+  const [currentUser, setCurrentUser] = useState(
+    {
+      id:"",
+      name:"",
+      city: "",
+      username: "",
+      password: "",
+      photo: "",
+      places:[]
+  }
+  )
   const [people, setPeople] = useState([])
   useEffect(()=>{
     fetch('http://localhost:4000/people' )
@@ -24,24 +34,30 @@ function App() {
       .then(people => setPeople(people))
   },[])
 
+
+  // FETCH 'places' from db.json, passes down as props
   const [places, setPlaces] = useState([])
   useEffect(() => {
-    fetch("http://localhost:3000/places")
+    fetch("http://localhost:4000/places")
       .then(resp => resp.json())
-      .then(data => setPlaces(data))
+      .then(places => setPlaces(places))
   }, [])
+
 
   const [activities, setActivities] = useState([])
   useEffect(() => {
-    fetch("http://localhost:3000/activities")
+    fetch("http://localhost:4000/activities")
       .then(resp => resp.json())
-      .then(data => setActivities(data))
+      .then(activities => setActivities(activities))
   }, [])
 
   return (
     <div className="App"> 
 
-      <NavBar/>
+       <NavBar 
+        loggedIn={loggedIn}
+        setLoggedIn={setLoggedIn}
+        setCurrentUser={setCurrentUser}/>
 
       <Routes>
 
@@ -63,9 +79,10 @@ function App() {
           path='/people' 
           element={
             <People
-              people={displayedPeople}
-              onUpdatePeople={handleUpdatePeople}
-              onDeletePeople={handleDeletePeople}
+              people={people}
+              currentUser={currentUser}
+              setLoggedIn={setLoggedIn}
+              setPeople={setPeople}
             />
           }
         />
@@ -74,6 +91,7 @@ function App() {
           path='/places' 
           element={<Places
             places={places}
+            setPlaces={setPlaces}
             />
           }
         />
@@ -82,16 +100,25 @@ function App() {
           path='/activities' 
           element={<Activities
             activities={activities}
+            setActivities={setActivities}
             />
           }
         />
 
+        <Route
+          path='/formPeople'
+          element={<FormPeople
+            people={people}
+            loggedIn={loggedIn}
+            setLoggedIn={setLoggedIn}
+            setPeople={setPeople}
+            setCurrentUser={setCurrentUser}
+            currentUser={currentUser} />}
+        />
+
       </Routes>
 
-      <FormPeople 
-        people={people}
-        onAddPeople={handleAddPeople}
-      />
+
 
     </div>
   );
