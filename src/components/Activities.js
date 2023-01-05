@@ -36,7 +36,6 @@ activitiesCard = activities.map(activities => {
       <FormActivities/>
     </div>
   );
-
 }
 
 export default Activities;
