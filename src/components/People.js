@@ -8,8 +8,6 @@ function People({people, currentUser, setLoggedIn, setPeople, setCurrentUser}) {
   const [clicked, setClicked] = useState(false)
   const {pathname} = useLocation()
 
-  console.log(pathname)
-
   const handleClick = ()=>{
 
     if (clicked === false){
