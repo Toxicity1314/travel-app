@@ -71,6 +71,7 @@ function App() {
               currentUser={currentUser}
               setCurrentUser={setCurrentUser}
               setPeople={setPeople}
+              places={places}
             />
           }
         />

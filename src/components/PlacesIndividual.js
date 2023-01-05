@@ -1,11 +1,12 @@
 import React, {useState,useEffect} from "react";
 import { PlacesCard, Button } from "./styles";
+import { useLocation } from "react-router-dom";
 
 function PlacesIndividual({place, currentUser, setCurrentUser}){
+    const {pathname} = useLocation()
     useEffect(()=>{
         for (const userPlace of currentUser.places){
              if(userPlace === place.city){
-                 console.log("I made it")
                  setMarkAsBeen(true)
                  break
              }
@@ -56,6 +57,15 @@ function PlacesIndividual({place, currentUser, setCurrentUser}){
         setMarkWantGo((markWantGo) => !markWantGo)
     }
 
+    let showBeen
+    let showInterested
+    if( pathname === "/places"){
+        showBeen = markAsBeen ? <Button onClick={handleBeenClickTrue}>✅</Button>:<Button onClick={handleBeenClickFalse}>❌</Button>
+        showInterested = <Button onClick={handleWantGoClick}>{markWantGo ? "🤩" : "🤔"}</Button>
+    }
+    
+    
+
     return(
         <PlacesCard 
             className="card"
@@ -69,12 +79,11 @@ function PlacesIndividual({place, currentUser, setCurrentUser}){
             <div>{place.city},</div>
             <div>{place.country}</div>
 
-            {markAsBeen ? <Button onClick={handleBeenClickTrue}>✅</Button>:<Button onClick={handleBeenClickFalse}>❌</Button>}
+            {showBeen}
+            {showInterested}
 
 
-            <Button 
-            onClick={handleWantGoClick}>{markWantGo ? "🤩" : "🤔"}
-            </Button>
+            
         
         </PlacesCard>
 )}
