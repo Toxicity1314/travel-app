@@ -6,17 +6,19 @@ import PlacesIndividual from "./PlacesIndividual";
 
 function Places({
   places,
-  setPlaces
+  setPlaces,
+  currentUser,
+  setCurrentUser
 }) {
 
 // MAKE SURE EACH BUTTON IS MAPPED TO EACH RESPECTIVE ITEM
 
   // SEARCH set up <PlaceSearch /> Functionality
   const [searchPlaces, setSearchPlaces] = useState("")
-  const displayedPlaces = places.filter((place) => {
-    return 
-    place.name.toLowerCase().incluces(searchPlaces.toLowerCase())
-  })
+  // const displayedPlaces = places.filter((place) => {
+  //   return 
+  //   place.name.toLowerCase().incluces(searchPlaces.toLowerCase())
+  // })
 
 
   // FORM set up <PlacesForm /> funcionality
@@ -43,7 +45,7 @@ function Places({
 
   let placesCard
 placesCard = places.map(place => {
-  return (<PlacesIndividual place={place}/>)
+  return (<PlacesIndividual key={place.id} place={place} currentUser={currentUser} setCurrentUser={setCurrentUser}/>)
 })
 
   return (

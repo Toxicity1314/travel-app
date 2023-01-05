@@ -12,7 +12,8 @@
         "Massachusetts",
         "St Lucia",
         "Colorado",
-        "Florida"
+        "Florida",
+        "Shenandoah"
       ]
     },
     {
@@ -64,17 +65,6 @@
       "photo": "https://ca.slack-edge.com/T02MD9XTF-U048RD4TBJ4-9276d11852fb-512",
       "places": [
         ""
-      ]
-    },
-    {
-      "id": 6,
-      "name": "ass",
-      "city": "ee",
-      "username": "fff",
-      "password": "ggg",
-      "photo": "hhh",
-      "places": [
-        "jjj"
       ]
     }
   ],
