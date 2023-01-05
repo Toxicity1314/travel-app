@@ -39,35 +39,52 @@ function People({people, currentUser, setLoggedIn, setPeople, setCurrentUser}) {
   peopleCard = people.map(people =>{
     return(
     <PeopleCard as={'ul'} key={people.id}>
-      <img src={people.photo} alt="profile"/>
-      <li>User: {people.name}</li>
-      <li>From: {people.city}</li>
-      <li>UserName: {people.username}</li>
-      <li>Places I have visited:
-        <ul>{people.places.map(place=><li key={place}>{place}</li>)}</ul>
-      </li>
-      {currentUser.name === people.name ? <Button as={Link} to="/formPeople">edit</Button>:""}
-      {currentUser.name === people.name ? <Button as={Link} onClick={handleClick}>Delete</Button>:""}
+      <img title='User Photo'src={people.photo} alt="profile"/>
+      <br/>
+      <div title='Username'>@{people.username}</div>
+      <br/>
+      <div title='Name'>{people.name}</div>
+      <div title='Hometown'className='niceTextSmaller'>📍{people.city}</div>
+      <br/>
+      <div className='easyTextItalic'>Top Destinations:
+        <ul>{people.places.map(place=><li title='"Have-been" or "want-to-go"...' key={place}>{place}</li>)}</ul>
+      </div>
+      <br/>
+      <br/>
+      {currentUser.name === people.name ? <Button className='easyTextSmallBold' as={Link} to="/formPeople">edit info</Button>:""}
+      {currentUser.name === people.name ? <Button className='easyTextSmallBold' as={Link} onClick={handleClick}>delete account</Button>:""}
     </PeopleCard>)
     })
   }else{
      peopleCard =(
-      <PeopleCard as={'ul'} key={currentUser.id}>
+      <PeopleCard 
+        as={'ul'} 
+        key={currentUser.id}
+      >
         <img src={currentUser.photo} alt="profile"/>
-        <li>User: {currentUser.name}</li>
-        <li>From: {currentUser.city}</li>
-        <li>UserName: {currentUser.username}</li>
-        <li>Places I have visited:
-          <ul>{currentUser.places.map(place=><li key={place}>{place}</li>)}</ul>
-        </li>
-        {currentUser.name === currentUser.name ? <Button as={Link} to="/formPeople">edit</Button>:""}
-        {currentUser.name === currentUser.name ? <Button as={Link} onClick={handleClick}>Delete</Button>:""}
+        <br/>
+        <div>@{currentUser.username}</div>
+        <br/>
+        <div>{currentUser.name}</div>
+        <div className='niceTextSmaller'>📍{currentUser.city}</div>
+        <br/>
+        <div className='easyTextItalic'>Top Destinations:
+          <ul >{currentUser.places.map(place=><li key={place}>{place}</li>)}</ul>
+        </div>
+        <br/>
+        <br/>
+        {currentUser.name === currentUser.name ? <Button className='easyTextSmallBold' as={Link} to="/formPeople">edit info</Button>:""}
+        {currentUser.name === currentUser.name ? <Button className='easyTextSmallBold' as={Link} onClick={handleClick}>delete account</Button>:""}
       </PeopleCard>)
 
   }
 
   return (
-    <div style={{display:"flex", margin: "1em"}}>
+    <div style={{
+      display:"flex", 
+      margin: "1em",
+      flexWrap: "wrap"
+      }}>
         {peopleCard}
     </div>
   );

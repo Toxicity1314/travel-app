@@ -60,13 +60,13 @@ placesCard = places.map(place => {
       className="card"
       as='ul'
       key={place.id}
-      style={{flexWrap:5}}>
+      >
       
       <img 
         src={place.image} 
         alt="pic"/>
-      <div>{place.city},</div>
-      <div>{place.country}</div>
+      <h4>{place.city},</h4>
+      <span>{place.country}</span>
 
       <Button 
         onClick={handleBeenClick}>{markAsBeen ? "✅" : "❌"}
