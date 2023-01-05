@@ -3,9 +3,10 @@ import { ActivitiesCard } from "./styles"
 import FormActivities from "./FormActivities";
 
 function Activities({
-  activities
+  activities,
+  setActivities
 }) {
-
+console.log(activities)
 let activitiesCard
 activitiesCard = activities.map(activities => {
   return (
@@ -33,7 +34,7 @@ activitiesCard = activities.map(activities => {
       <div style={{display:"flex", margin: "1em"}}>
           {activitiesCard}
       </div>
-      <FormActivities/>
+      <FormActivities setActivities={setActivities} activities={activities}/>
     </div>
   );
 }

@@ -65,6 +65,17 @@
       "places": [
         ""
       ]
+    },
+    {
+      "id": 6,
+      "name": "ass",
+      "city": "ee",
+      "username": "fff",
+      "password": "ggg",
+      "photo": "hhh",
+      "places": [
+        "jjj"
+      ]
     }
   ],
   "places": [
@@ -103,6 +114,7 @@
       "city": "Tokyo",
       "country": "Japan",
       "image": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/gettyimages-1058360160-1-1624796189.jpg?crop=1.00xw:0.756xh;0,0.244xh&resize=980:*"
+
     }
   ],
   "activities": [
@@ -153,6 +165,7 @@
         "Historic",
         "Desert"
       ]
+
     }
   ]
 }
