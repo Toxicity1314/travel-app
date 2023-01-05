@@ -26,7 +26,7 @@ if(loggedIn){
         <Button as={NavLink} to="/people">people</Button>
         <Button as={NavLink} to="/places">places</Button>
         <Button as={NavLink} to="/activities">activities</Button>
-        <Button as={Link} onClick={handleClick} to="/">Log Out</Button>  
+        <Button as={Link} onClick={handleClick} to="/">log out</Button>  
     </header>
   );
 }else{

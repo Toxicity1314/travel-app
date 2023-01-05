@@ -14,9 +14,9 @@ export default styled.div`
         margin-right: -20;
         margin-bottom: 10px;
         width: 50%;
-        height: 10em;
+        height: 15em;
         border-radius:10px;
-        width: 10em;
+        width: 15em;
         align: center;
     }
 `

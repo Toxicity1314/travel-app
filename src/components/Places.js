@@ -65,8 +65,8 @@ placesCard = places.map(place => {
       <img 
         src={place.image} 
         alt="pic"/>
-      <h4>{place.city},</h4>
-      <span>{place.country}</span>
+      <h4>{place.city}, {place.country}</h4>
+
 
       <Button 
         onClick={handleBeenClick}>{markAsBeen ? "✅" : "❌"}
