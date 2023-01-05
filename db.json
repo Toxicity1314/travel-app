@@ -271,6 +271,19 @@
       ],
       "image": "https://content.webtickets.co.za/cableway/banner_TableMountainCableCar.jpg",
       "id": 12
+    },
+    {
+      "title": "Rio de Janeiro Cathedral",
+      "city": "Rio de Janeiro",
+      "country": "Brazil",
+      "address": "rio de janeiro cathedral - rio, brazil",
+      "tags": [
+        "Religious",
+        " Architecture",
+        " Urban"
+      ],
+      "image": "https://img.atlasobscura.com/-rLtMrmDYly2GqXiLv1KOTjhGHxJuqJEZOTWKdV0Xak/rt:fit/h:390/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy85OGQ4/YmQ5Y2IwZTViMmE4/MmZfMzE5Mjc2MzU3/MF9kMTJiZmZkNzFj/X28uanBn.jpg",
+      "id": 13
     }
   ]
 }
