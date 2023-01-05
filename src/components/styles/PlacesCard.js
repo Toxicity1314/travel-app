@@ -3,9 +3,6 @@ import styled from 'styled-components';
 export default styled.div`
     margin: 1em;
     padding: 2em;
-    /* padding-top: -1em;
-    padding-right: -1em;
-    padding-left: -1em; */
     border: hidden;
     border-radius: 10px;
     background: #E9E186;

@@ -17,64 +17,57 @@
     },
     {
       "id": 2,
-      "name": "Jandro",
+      "name": "Jandro Spagnoli Pagan",
       "city": "Reston",
-      "username": "Jandro1",
-      "password": "Jandro2",
+      "username": "ajspaghetti",
+      "password": "travelApp",
       "photo": "https://media.licdn.com/dms/image/C4E03AQG6l11IxkDizw/profile-displayphoto-shrink_800_800/0/1607421640755?e=1678320000&v=beta&t=cNc0WYTd5Jt8ksAVjTl9KVSUNqmcSyt13aQP8RtfEP8",
       "places": [
         "DC",
         "Puerto Rico",
-        "Italy",
-        "Spain",
-        "Denmark",
-        "Cuba"
+        "Italy"
       ]
     },
     {
       "id": 3,
       "name": "Olivia Perez",
       "city": "New York",
-      "username": "Olivia1",
+      "username": "Olivia_NYC",
       "password": "Olivia2",
       "photo": "https://ca.slack-edge.com/T02MD9XTF-U04AV06M5QT-3ab3f0bf4a37-512",
       "places": [
         "Tokyo",
         "South Africa",
-        "Brazil"
+        "Brazil",
+        "New York"
       ]
     },
     {
       "id": 4,
-      "name": "Brooke",
+      "name": "BrookeATL",
       "city": "Atlanta",
       "username": "Brooke1",
       "password": "Brooke2",
       "photo": "https://ca.slack-edge.com/T02MD9XTF-UK933ECJJ-6c26a3d655a5-512",
       "places": [
+        "",
+        "",
+        "",
         ""
       ]
     },
     {
       "id": 5,
-      "name": "Eleanor",
+      "name": "Eleanor Kelman",
       "city": "Frederick",
-      "username": "Eleanor1",
+      "username": "Eleanor-K-MD",
       "password": "Eleanor2",
       "photo": "https://ca.slack-edge.com/T02MD9XTF-U048RD4TBJ4-9276d11852fb-512",
       "places": [
+        "",
+        "",
+        "",
         ""
-      ]
-    },
-    {
-      "id": 6,
-      "name": "ass",
-      "city": "ee",
-      "username": "fff",
-      "password": "ggg",
-      "photo": "hhh",
-      "places": [
-        "jjj"
       ]
     }
   ],

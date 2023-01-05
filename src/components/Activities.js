@@ -17,8 +17,7 @@ function Activities({
   const [markEnjoyed, setMarkEnjoyed] = useState(false)
   function handleEnjoyedClick() {
     setMarkEnjoyed((markEnjoyed) => !markEnjoyed)
-  }
-
+  };
 
 let activitiesCard
 activitiesCard = activities.map(activity => {
@@ -31,21 +30,28 @@ activitiesCard = activities.map(activity => {
       <img 
         src={activity.image} 
         alt="pic"/>
-      <li>Title: {activity.title}</li>
-      <li>City: {activity.city}</li>
-      <li>Region: {activity.country}</li>
-      <li>Tags:
-          <ul>{activity.tags.map(tag=><li key={tag}>{tag}</li>)}</ul>
-      </li>
+      <div style={{
+        alignItems: 'center',
+        alignContent: 'center',
+        alignText: 'center'
+      }}
+      >
+        {activity.title}
+      </div>
+      <div className='niceTextSmaller'>{activity.city}, {activity.country}</div>
+      <br />
+      <div className="easyTextItalic">Tags:
+          <ul className="easyTextSmaller">{activity.tags.map(tag=><li key={tag}>{tag}</li>)}</ul><br/>
+      </div>
 
       <Button
-        style={{width:60, height:100}}
-        onClick={handleDoneClick}>Done?{markAsDone ? "✅" : "❌"}
+        style={{width:40, height:40}}
+        onClick={handleDoneClick}>{markAsDone ? "✅" : "❌"}
       </Button>
 
       <Button
-        style={{width:60, height:100}}
-        onClick={handleEnjoyedClick}>Enjoyed?{markEnjoyed ? "🤩" : "😒"}
+        style={{width:40, height:40}}
+        onClick={handleEnjoyedClick}>{markEnjoyed ? "🤩" : "😒"}
       </Button>
 
       
@@ -53,10 +59,16 @@ activitiesCard = activities.map(activity => {
 )
 })
 
+
+
   return (
     <div>
       <div 
-        style={{display:"flex", margin: "1em"}}
+        style={{
+          display:"flex", 
+          margin: "1em",
+          flexWrap:"wrap"
+        }}
         >
           {activitiesCard}
       </div>
