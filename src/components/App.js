@@ -93,6 +93,8 @@ function App() {
           element={<Places
             places={places}
             setPlaces={setPlaces}
+            currentUser={currentUser}
+            setCurrentUser={setCurrentUser}
             />
           }
         />
