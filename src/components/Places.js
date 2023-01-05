@@ -1,8 +1,8 @@
-import React, {useState, useEffect} from "react";
-// import { PlacesCard, Button } from "./styles";
+import React, { useState, useEffect } from "react";
+import { PlacesCard, Button } from "./styles";
 import FormPlaces from "./FormPlaces"
-import SearchPlaces from "./SearchPlaces"
-import PlacesCollection from "./PlacesCollection"
+// import SearchPlaces from "./SearchPlaces"
+
 
 function Places({
   places,
@@ -19,15 +19,25 @@ function Places({
   })
 
 
+  // Mark as 'Been' button
+const [markAsBeen, setMarkAsBeen] = useState(false)
+function handleBeenClick() {
+  setMarkAsBeen((markAsBeen) => !markAsBeen)
+}
+
+// Mark as 'Want [to] Go' button
+const [markWantGo, setMarkWantGo] = useState(false)
+function handleWantGoClick() {
+  setMarkWantGo((markWantGo) => !markWantGo)
+}
+
   // FORM set up <PlacesForm /> funcionality
   function handleAddPlaces(newPlace) {
-    //const updatedPlacesArray = [...places, newPlace]
     setPlaces([...places, newPlace])
   }
-  console.log(places)
 
   function handleDeletePlaces(id) {
-    const updatedPlacesArray = places.filter((place) =>
+    const updatedPlacesArray = places.filter((place) => 
       place.id !== id)
       setPlaces(updatedPlacesArray)
   }
@@ -43,30 +53,45 @@ function Places({
     setPlaces(updatedPlacesArray)
   }
 
+  let placesCard
+placesCard = places.map(place => {
+  return (
+    <PlacesCard 
+      className="card"
+      as='ul'
+      key={place.id}
+      style={{flexWrap:5}}>
+      
+      <img 
+        src={place.image} 
+        alt="pic"/>
+      <div>{place.city},</div>
+      <div>{place.country}</div>
 
+      <Button 
+        onClick={handleBeenClick}>{markAsBeen ? "✅" : "❌"}
+      </Button>
+
+      <Button 
+        onClick={handleWantGoClick}>{markWantGo ? "🤩" : "🤔"}
+      </Button>
+      
+    </PlacesCard>
+)
+})
 
   return (
     <div>
-      {/* <div style={{display:"flex", margin: "1em"}} >
+      <div style={{display:"flex", margin: "1em"}}>
           {placesCard}
-      </div> */}
-      <PlacesCollection
-        places={places}
-        onUpdatePlace={handleUpdatePlaces}
-        onDeletePlace={handleDeletePlaces}
-      />
-      <SearchPlaces 
-        searchPlaces={searchPlaces}
-        onSearchPlacesChange={setSearchPlaces}
-      />
+      </div>
       <FormPlaces 
-        places={places}
-        onAddPlace={handleAddPlaces}
-      />
-
+        setPlaces={setPlaces} 
+        places={places}/>
     </div>
   );
-
 }
+
+
 
 export default Places;

@@ -1,18 +1,25 @@
 import styled from 'styled-components';
 
 export default styled.button`
-    text-decoration: none;
-    margin-left: 20px;
+    width: 40px;
+    height: 40px;
+    text-decoration: bold;
+    margin-left: 1em;
     margin-top: 1em;
-    padding: 1em;
     color: black;
-    border: solid;
+    border: hidden;
+    border-radius:20px
+    border-bottom-style:solid;
   
   &.active,
   &:hover
   {
+    width: 40px;
+    height: 40px;
     outline: none;
-    background-color: #55c2da;
-    border: solid;
+    background-color: #00B7BD;
+    border: hidden;
+    border-radius: 20px;
+    align: center;
   }
 `

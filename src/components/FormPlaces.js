@@ -1,10 +1,11 @@
 import React, {useState} from "react";
 // import {useNavigate} from "react-router-dom";
 import { Form } from "semantic-ui-react";
+import Places from "./Places";
 
 function FormPlaces({
-// places,
-onAddPlace
+places,
+setAddPlace
 }) {
 
     const [city, setCity] = useState("")
@@ -23,7 +24,7 @@ onAddPlace
             })
         })
         .then((resp) => resp.json())
-        .then((newPlace) => onAddPlace(newPlace)) // make sure onAddPlace is propped down correctly
+        .then((newPlace) => setAddPlace(...places, newPlace)) // make sure setAddPlace is propped down correctly
     }
 
 

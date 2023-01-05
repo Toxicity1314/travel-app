@@ -38,3 +38,7 @@ html {
     src: local('queenMedium'), url(./assets/QueensidesMedium-x30zV.ttf) format('truetype');
 
 }
+
+.styled.div {
+    flex-wrap: wrap;
+}

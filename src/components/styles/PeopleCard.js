@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 
 export default styled.div`
-    margin: 1em;
-    padding: 1em;
+    margin: 3em;
+    padding: 2em;
     border: solid;
     background: #00A190;
     
