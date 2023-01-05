@@ -15,7 +15,7 @@ function FormActivities({
 
     const handleActivitiesSubmit = e => {
         e.preventDefault()
-        fetch("https://localhost:4000/activities", {
+        fetch("http://localhost:4000/activities", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",

@@ -21,9 +21,10 @@ function Places({
 
   // FORM set up <PlacesForm /> funcionality
   function handleAddPlaces(newPlace) {
-    const updatedPlacesArray = [...places, newPlace]
-    setPlaces(updatedPlacesArray)
+    //const updatedPlacesArray = [...places, newPlace]
+    setPlaces([...places, newPlace])
   }
+  console.log(places)
 
   function handleDeletePlaces(id) {
     const updatedPlacesArray = places.filter((place) =>

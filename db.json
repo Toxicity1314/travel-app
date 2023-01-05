@@ -1,127 +1,167 @@
 {
-    "people": [
-      {
-          "id": 1,
-          "name": "Sean Welsh",
-          "city": "Fredericksburg",
-          "username": "Sean1",
-          "password": "Sean2",
-          "photo": "https://ca.slack-edge.com/T02MD9XTF-U04922S2211-d687e230017d-512",
-          "places":["Bermuda", "St Lucia", "Colorado"]
-      },
-      {
-        "id": 2,
-        "name": "Jandro",
-        "city": "Reston",
-        "username": "Jandro1",
-        "password": "Jandro2",
-        "photo": "https://media.licdn.com/dms/image/C4E03AQG6l11IxkDizw/profile-displayphoto-shrink_800_800/0/1607421640755?e=1678320000&v=beta&t=cNc0WYTd5Jt8ksAVjTl9KVSUNqmcSyt13aQP8RtfEP8",
-        "places": ["DC", "Puerto Rico"]
-      },
-      {
-        "id": 3,
-        "name": "Olivia Perez",
-        "city": "New York",
-        "username": "Olivia1",
-        "password": "Olivia2",
-        "photo": "https://ca.slack-edge.com/T02MD9XTF-U04AV06M5QT-3ab3f0bf4a37-512",
-        "places": ["Tokyo", "South Africa", "Brazil"]
-      },
-      {
-        "id": 4,
-        "name": "Brooke",
-        "city": "Atlanta",
-        "username": "Brooke1",
-        "password": "Brooke2",
-        "photo": "https://ca.slack-edge.com/T02MD9XTF-UK933ECJJ-6c26a3d655a5-512",
-        "places": [""]
-      },
-      {
-        "id": 5,
-        "name": "Eleanor",
-        "city": "Frederick",
-        "username": "Eleanor1",
-        "password": "Eleanor2",
-        "photo": "https://ca.slack-edge.com/T02MD9XTF-U048RD4TBJ4-9276d11852fb-512",
-        "places": [""]
-      }
-    ],
-
-    "places": [
-        {
-            "id": 1,
-            "city": "Cairo",
-            "country": "Egypt",
-            "image": "https://d3rr2gvhjw0wwy.cloudfront.net/uploads/mandators/49581/file-manager/cairo-city-egypt-2020.jpg"
-        },
-        {
-            "id": 2,
-            "city": "San Juan",
-            "country": "Puerto Rico",
-            "image": "https://upload.wikimedia.org/wikipedia/commons/9/93/Flag_gate_calle_de_la_virtud_viejo_san_juan_puerto_rico_2021-08-08_17-18-27_1.jpg"
-        },
-        {
-            "id": 3,
-            "city": "Rincon",
-            "country": "Puerto Rico",
-            "image": "https://boricuaonline.com/wp-content/uploads/2017/01/rincon.jpg"
-        },
-        {
-            "id": 4,
-            "city": "Rome",
-            "country": "Italy",
-            "image": "https://www.silverkris.com/wp-content/uploads/2017/04/Rome-Photo-credit-Griffin-Wooldridge-Pexels.jpg"
-        },
-        {
-            "id": 5,
-            "city": "Shenandoah",
-            "country": "USA",
-            "image": "https://i.ytimg.com/vi/IoAY6BlXh4o/maxresdefault.jpg"
-        },
-        {
-            "id": 6,
-            "city": "Tokyo",
-            "country": "Japan",
-            "image": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/gettyimages-1058360160-1-1624796189.jpg?crop=1.00xw:0.756xh;0,0.244xh&resize=980:*"
-        }
-    ],
-
-    "activities": [
-        {
-            "id": 1,
-            "image":"https://i.pinimg.com/originals/b9/06/ef/b906ef5007e0f60be5fd83a76c59060f.jpg",
-            "title": "Surfing Lessons",
-            "city": "Rincon",
-            "country": "Puerto Rico",
-            "address": "Rincon surfing lessons - Rincon, Puerto Rico",
-            "tags": ["Beach","Active"]
-        },
-        {
-            "id": 2,
-            "image":"https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Colosseum_in_Rome%2C_Italy_-_April_2007.jpg/1600px-Colosseum_in_Rome%2C_Italy_-_April_2007.jpg?20070506202935",
-            "title": "Colosseum",
-            "city": "Rome",
-            "country": "Italy",
-            "address": "Colosseo - Roma, IT",
-            "tags": ["Historic","Urban"]
-        },
-        {
-            "id": 3,
-            "image":"https://cdn2.apstatic.com/photos/hike/7017403_large_1554829345.jpg",
-            "title": "White Oak Canyon Lower Falls",
-            "city": "Syria",
-            "country": "USA",
-            "address": "WHITE OAK CANYON LOWER FALLS - SYRIA, VA",
-            "tags": ["Hiking","Water"]
-        },
-        {
-            "id": 4,
-            "image":"https://cdn.mos.cms.futurecdn.net/YMa7Wx2FyjQFUjEeqa72Rm-1920-80.jpg.webp",
-            "title": "Pyramids of Giza",
-            "city": "Cairo",
-            "country": "Egypt",
-            "address": "PYRAMIDS OF GIZA - GIZA GOVERNORATE, EGYPT",
-            "tags":["Historic","Desert"]
-        }
-    ]
+  "people": [
+    {
+      "id": 1,
+      "name": "Sean Welsh",
+      "city": "Fredericksburg",
+      "username": "Sean1",
+      "password": "Sean2",
+      "photo": "https://ca.slack-edge.com/T02MD9XTF-U04922S2211-d687e230017d-512",
+      "places": [
+        "Bermuda",
+        "St Lucia",
+        "Colorado"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Jandro",
+      "city": "Reston",
+      "username": "Jandro1",
+      "password": "Jandro2",
+      "photo": "https://media.licdn.com/dms/image/C4E03AQG6l11IxkDizw/profile-displayphoto-shrink_800_800/0/1607421640755?e=1678320000&v=beta&t=cNc0WYTd5Jt8ksAVjTl9KVSUNqmcSyt13aQP8RtfEP8",
+      "places": [
+        "DC",
+        "Puerto Rico"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Olivia Perez",
+      "city": "New York",
+      "username": "Olivia1",
+      "password": "Olivia2",
+      "photo": "https://ca.slack-edge.com/T02MD9XTF-U04AV06M5QT-3ab3f0bf4a37-512",
+      "places": [
+        "Tokyo",
+        "South Africa",
+        "Brazil"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Brooke",
+      "city": "Atlanta",
+      "username": "Brooke1",
+      "password": "Brooke2",
+      "photo": "https://ca.slack-edge.com/T02MD9XTF-UK933ECJJ-6c26a3d655a5-512",
+      "places": [
+        ""
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Eleanor",
+      "city": "Frederick",
+      "username": "Eleanor1",
+      "password": "Eleanor2",
+      "photo": "https://ca.slack-edge.com/T02MD9XTF-U048RD4TBJ4-9276d11852fb-512",
+      "places": [
+        ""
+      ]
+    }
+  ],
+  "places": [
+    {
+      "id": 1,
+      "city": "Cairo",
+      "country": "Egypt",
+      "image": "https://d3rr2gvhjw0wwy.cloudfront.net/uploads/mandators/49581/file-manager/cairo-city-egypt-2020.jpg"
+    },
+    {
+      "id": 2,
+      "city": "San Juan",
+      "country": "Puerto Rico",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/9/93/Flag_gate_calle_de_la_virtud_viejo_san_juan_puerto_rico_2021-08-08_17-18-27_1.jpg"
+    },
+    {
+      "id": 3,
+      "city": "Rincon",
+      "country": "Puerto Rico",
+      "image": "https://boricuaonline.com/wp-content/uploads/2017/01/rincon.jpg"
+    },
+    {
+      "id": 4,
+      "city": "Rome",
+      "country": "Italy",
+      "image": "https://www.silverkris.com/wp-content/uploads/2017/04/Rome-Photo-credit-Griffin-Wooldridge-Pexels.jpg"
+    },
+    {
+      "id": 5,
+      "city": "Shenandoah",
+      "country": "USA",
+      "image": "https://i.ytimg.com/vi/IoAY6BlXh4o/maxresdefault.jpg"
+    },
+    {
+      "id": 6,
+      "city": "Tokyo",
+      "country": "Japan",
+      "image": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/gettyimages-1058360160-1-1624796189.jpg?crop=1.00xw:0.756xh;0,0.244xh&resize=980:*"
+    },
+    {
+      "city": "asdf",
+      "country": "fff",
+      "image": "eee",
+      "id": 7
+    }
+  ],
+  "activities": [
+    {
+      "id": 1,
+      "image": "https://i.pinimg.com/originals/b9/06/ef/b906ef5007e0f60be5fd83a76c59060f.jpg",
+      "title": "Surfing Lessons",
+      "city": "Rincon",
+      "country": "Puerto Rico",
+      "address": "Rincon surfing lessons - Rincon, Puerto Rico",
+      "tags": [
+        "Beach",
+        "Active"
+      ]
+    },
+    {
+      "id": 2,
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Colosseum_in_Rome%2C_Italy_-_April_2007.jpg/1600px-Colosseum_in_Rome%2C_Italy_-_April_2007.jpg?20070506202935",
+      "title": "Colosseum",
+      "city": "Rome",
+      "country": "Italy",
+      "address": "Colosseo - Roma, IT",
+      "tags": [
+        "Historic",
+        "Urban"
+      ]
+    },
+    {
+      "id": 3,
+      "image": "https://cdn2.apstatic.com/photos/hike/7017403_large_1554829345.jpg",
+      "title": "White Oak Canyon Lower Falls",
+      "city": "Syria",
+      "country": "USA",
+      "address": "WHITE OAK CANYON LOWER FALLS - SYRIA, VA",
+      "tags": [
+        "Hiking",
+        "Water"
+      ]
+    },
+    {
+      "id": 4,
+      "image": "https://cdn.mos.cms.futurecdn.net/YMa7Wx2FyjQFUjEeqa72Rm-1920-80.jpg.webp",
+      "title": "Pyramids of Giza",
+      "city": "Cairo",
+      "country": "Egypt",
+      "address": "PYRAMIDS OF GIZA - GIZA GOVERNORATE, EGYPT",
+      "tags": [
+        "Historic",
+        "Desert"
+      ]
+    },
+    {
+      "title": "asdf",
+      "city": "eee",
+      "country": "rrr",
+      "address": "eee",
+      "tags": "",
+      "image": "ggg",
+      "id": 5
+    }
+  ]
 }

@@ -13,16 +13,14 @@ onAddPlace
 
     function handlePlaceSubmit(e) {
         e.preventDefault()
-        fetch("https://localhost:4000/places", {
+        fetch("http://localhost:4000/places", {
             method: "POST",
-            headers: {
-                "Content-Type": "application/json",
-            },
+            headers: { "Content-Type": "application/json" }, //deleted extra ,
             body: JSON.stringify({
                 city: city,
                 country: country,
                 image: placeImage
-            }),
+            })
         })
         .then((resp) => resp.json())
         .then((newPlace) => onAddPlace(newPlace)) // make sure onAddPlace is propped down correctly
@@ -53,7 +51,7 @@ onAddPlace
                         onChange={(e) => setPlaceImage(e.target.value)}
                         />
                 </Form.Group>
-                <Form.Button>Submit</Form.Button>
+                <Form.Button type="submit">Submit</Form.Button>
             </Form>
         </div>
     )

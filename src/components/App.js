@@ -43,7 +43,6 @@ function App() {
       .then(places => setPlaces(places))
   }, [])
 
-
   const [activities, setActivities] = useState([])
   useEffect(() => {
     fetch("http://localhost:4000/activities")
