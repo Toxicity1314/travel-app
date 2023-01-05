@@ -61,6 +61,17 @@
       "places": [
         ""
       ]
+    },
+    {
+      "id": 6,
+      "name": "ass",
+      "city": "ee",
+      "username": "fff",
+      "password": "ggg",
+      "photo": "hhh",
+      "places": [
+        "jjj"
+      ]
     }
   ],
   "places": [
@@ -105,6 +116,12 @@
       "country": "fff",
       "image": "eee",
       "id": 7
+    },
+    {
+      "city": "new ",
+      "country": "place",
+      "image": "to visit",
+      "id": 8
     }
   ],
   "activities": [
@@ -157,12 +174,14 @@
       ]
     },
     {
-      "title": "asdf",
+      "title": "adsf",
       "city": "eee",
-      "country": "rrr",
-      "address": "eee",
-      "tags": "",
-      "image": "ggg",
+      "country": "rr",
+      "address": "ff",
+      "tags": [
+        "gg"
+      ],
+      "image": "hh",
       "id": 5
     }
   ]

@@ -3,18 +3,19 @@ import React, {useState} from "react";
 import { Form } from "semantic-ui-react";
 
 function FormActivities({
-    // activities,
-    onAddActivities
+    activities,
+    setActivities
 }) {
     const [title, setTitle] = useState("")
     const [city, setCity] = useState("")
     const [country, setCountry] = useState("")
     const [address, setAddress] = useState("") // user can paste a google maps link or just the actual address
-    const [tags, setTags] = useState("") // must have comma between tags
+    const [tags, setTags] = useState([]) // must have comma between tags (array?)
     const [activitiesImage, setActivitiesImage] = useState("")
 
     const handleActivitiesSubmit = e => {
         e.preventDefault()
+        const fixingTags = tags.split(",")
         fetch("http://localhost:4000/activities", {
             method: "POST",
             headers: {
@@ -25,12 +26,12 @@ function FormActivities({
                 city: city,
                 country: country,
                 address: address,
-                tags: tags,
+                tags: fixingTags,
                 image: activitiesImage
             }),
         })
         .then((resp) => resp.json())
-        .then((newActivities) => onAddActivities(newActivities)) // make sure onAddPlace is propped down correctly
+        .then((newActivities) => setActivities([...activities, newActivities])) // make sure onAddPlace is propped down correctly
     };
 
     return (
@@ -66,7 +67,7 @@ function FormActivities({
                         label="tags"
                         placeholder="tags must be separated by commas"
                         name="tags"
-                        onChange={(e) => setAddress(e.target.value)}
+                        onChange={(e) => setTags(e.target.value)}
                     />
                     <Form.Input fluid
                         label="pic"

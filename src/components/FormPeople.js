@@ -8,8 +8,6 @@ function FormPeople({people, loggedIn, setLoggedIn, setPeople, setCurrentUser, c
 
     const handleSubmit = (e)=>{
         e.preventDefault()
-        console.log("formData")
-        console.log(typeof(formData.places))
         if(typeof(formData.places)==="string"){
             formData.places= formData.places.split(",")
             formData.places= formData.places.map(place=>place.trim())
@@ -34,16 +32,15 @@ function FormPeople({people, loggedIn, setLoggedIn, setPeople, setCurrentUser, c
       })
        
         }else{ 
-            formData.id = Date.now()  
             fetch('http://localhost:4000/people',{
             method: 'POST',
             headers: { 'Content-Type': 'application/json'},
             body: JSON.stringify(formData)
             } )
             .then(res => res.json())
-            .then(()=>{
-                setCurrentUser(formData)
-                setPeople([...people, formData])
+            .then((newUser)=>{
+                setCurrentUser(newUser)
+                setPeople([...people, newUser])
                 setLoggedIn(!loggedIn)
             })
         }
