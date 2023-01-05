@@ -8,8 +8,7 @@ export default styled.button`
     margin-top: 1em;
     color: black;
     border: hidden;
-    border-radius:20px
-    border-bottom-style:solid;
+    border-radius: 20px;
   
   &.active,
   &:hover
@@ -20,6 +19,5 @@ export default styled.button`
     background-color: #00B7BD;
     border: hidden;
     border-radius: 20px;
-    align: center;
   }
 `

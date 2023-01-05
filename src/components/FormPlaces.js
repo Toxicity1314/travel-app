@@ -5,7 +5,7 @@ import Places from "./Places";
 
 function FormPlaces({
 places,
-setAddPlace
+setPlaces
 }) {
 
     const [city, setCity] = useState("")
@@ -24,7 +24,7 @@ setAddPlace
             })
         })
         .then((resp) => resp.json())
-        .then((newPlace) => setAddPlace(...places, newPlace)) // make sure setAddPlace is propped down correctly
+        .then((newPlace) => setPlaces([...places, newPlace])) // make sure setAddPlace is propped down correctly
     }
 
 
