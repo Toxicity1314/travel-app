@@ -6,7 +6,7 @@ import People from "./People";
 import Places from "./Places";
 import Activities from "./Activities";
 import FormPeople from "./FormPeople";
-import SearchPeople from "./SearchPeople";
+
 
 
 function App() {
@@ -16,7 +16,17 @@ function App() {
 
   // FETCHES DB.JSON
   const [loggedIn, setLoggedIn] = useState(false)
-  const [currentUser, setCurrentUser] = useState({})
+  const [currentUser, setCurrentUser] = useState(
+    {
+      id:"",
+      name:"",
+      city: "",
+      username: "",
+      password: "",
+      photo: "",
+      places:[]
+  }
+  )
   const [people, setPeople] = useState([])
   useEffect(()=>{
     fetch('http://localhost:4000/people' )
@@ -41,7 +51,10 @@ function App() {
   return (
     <div className="App"> 
 
-      <NavBar/>
+       <NavBar 
+        loggedIn={loggedIn}
+        setLoggedIn={setLoggedIn}
+        setCurrentUser={setCurrentUser}/>
 
       <Routes>
 
@@ -55,6 +68,7 @@ function App() {
               setLoggedIn={setLoggedIn}
               currentUser={currentUser}
               setCurrentUser={setCurrentUser}
+              setPeople={setPeople}
             />
           }
         />
@@ -63,9 +77,11 @@ function App() {
           path='/people' 
           element={
             <People
-              people={displayedPeople}
-              onUpdatePeople={handleUpdatePeople}
-              onDeletePeople={handleDeletePeople}
+              people={people}
+              currentUser={currentUser}
+              setLoggedIn={setLoggedIn}
+              setPeople={setPeople}
+              setCurrentUser={setCurrentUser}
             />
           }
         />
@@ -86,12 +102,20 @@ function App() {
           }
         />
 
+        <Route
+          path='/formPeople'
+          element={<FormPeople
+            people={people}
+            loggedIn={loggedIn}
+            setLoggedIn={setLoggedIn}
+            setPeople={setPeople}
+            setCurrentUser={setCurrentUser}
+            currentUser={currentUser} />}
+        />
+
       </Routes>
 
-      <FormPeople 
-        people={people}
-        onAddPeople={handleAddPeople}
-      />
+
 
     </div>
   );

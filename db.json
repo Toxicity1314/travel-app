@@ -1,95 +1,102 @@
 {
-    "people": [
-      {
-          "id": 1,
-          "name": "Sean Welsh",
-          "city": "Fredericksburg",
-          "username": "Sean1",
-          "password": "Sean2",
-          "photo": "https://ca.slack-edge.com/T02MD9XTF-U04922S2211-d687e230017d-512",
-          "places":["Bermuda", "St Lucia", "Colorado"]
-      },
-      {
-        "id": 2,
-        "name": "Jandro",
-        "city": "Reston?",
-        "username": "Jandro1",
-        "password": "Jandro2",
-        "photo": "https://ca.slack-edge.com/T02MD9XTF-U04218SPJP5-869a62ec42de-72",
-        "places": ["DC", "Puerto Rico"]
-      }
-    ],
-
-    "places": [
-        {
-            "id": 1,
-            "city": "Cairo",
-            "country": "Egypt",
-            "image": "https://d3rr2gvhjw0wwy.cloudfront.net/uploads/mandators/49581/file-manager/cairo-city-egypt-2020.jpg"
-        },
-        {
-            "id": 2,
-            "city": "San Juan",
-            "country": "Puerto Rico",
-            "image": ""
-        },
-        {
-            "id": 3,
-            "city": "Rincon",
-            "country": "Puerto Rico",
-            "image": ""
-        },
-        {
-            "id": 4,
-            "city": "Rome",
-            "country": "Italy",
-            "image": ""
-        },
-        {
-            "id": 5,
-            "city": "Shenandoah",
-            "country": "USA",
-            "image": ""
-        },
-        {
-            "id": 6,
-            "city": "Tokyo",
-            "country": "Japan",
-            "image": ""
-        }
-    ],
-
-    "activities": [
-        {
-            "id": 1,
-            "title": "Surfing Lessons",
-            "city": "Rincon",
-            "country": "Puerto Rico",
-            "address": "Rincon surfing lessons - Rincon, Puerto Rico",
-            "tag": "Beach"
-        },
-        {
-            "id": 2,
-            "title": "Colosseum",
-            "city": "Rome",
-            "country": "Italy",
-            "address": "Colosseo - Roma, IT",
-            "tag": "Historic"
-        },
-        {
-            "id": 3,
-            "title": "White Oak Canyon Lower Falls",
-            "city": "Syria",
-            "country": "USA",
-            "address": "WHITE OAK CANYON LOWER FALLS - SYRIA, VA",
-            "tag": "Hiking"
-        },
-        {
-            "id": 4,
-            "title": "Pyramids of Giza",
-            "city": "Cairo",
-            "country": "Egypt",
-            "address": "Historic"
-        }
-    ]
+  "people": [
+    {
+      "id": 1,
+      "name": "Sean Welsh",
+      "city": "Fredericksburg",
+      "username": "Sean1",
+      "password": "Sean2",
+      "photo": "https://ca.slack-edge.com/T02MD9XTF-U04922S2211-d687e230017d-512",
+      "places": [
+        "Bermuda",
+        "Massachusetts",
+        "St Lucia",
+        "Colorado",
+        "Florida"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Jandro",
+      "city": "Reston?",
+      "username": "Jandro1",
+      "password": "Jandro2",
+      "photo": "https://ca.slack-edge.com/T02MD9XTF-U04218SPJP5-869a62ec42de-72",
+      "places": [
+        "DC",
+        "Puerto Rico"
+      ]
+    }
+  ],
+  "places": [
+    {
+      "id": 1,
+      "city": "Cairo",
+      "country": "Egypt",
+      "image": "https://d3rr2gvhjw0wwy.cloudfront.net/uploads/mandators/49581/file-manager/cairo-city-egypt-2020.jpg"
+    },
+    {
+      "id": 2,
+      "city": "San Juan",
+      "country": "Puerto Rico",
+      "image": ""
+    },
+    {
+      "id": 3,
+      "city": "Rincon",
+      "country": "Puerto Rico",
+      "image": ""
+    },
+    {
+      "id": 4,
+      "city": "Rome",
+      "country": "Italy",
+      "image": ""
+    },
+    {
+      "id": 5,
+      "city": "Shenandoah",
+      "country": "USA",
+      "image": ""
+    },
+    {
+      "id": 6,
+      "city": "Tokyo",
+      "country": "Japan",
+      "image": ""
+    }
+  ],
+  "activities": [
+    {
+      "id": 1,
+      "title": "Surfing Lessons",
+      "city": "Rincon",
+      "country": "Puerto Rico",
+      "address": "Rincon surfing lessons - Rincon, Puerto Rico",
+      "tag": "Beach"
+    },
+    {
+      "id": 2,
+      "title": "Colosseum",
+      "city": "Rome",
+      "country": "Italy",
+      "address": "Colosseo - Roma, IT",
+      "tag": "Historic"
+    },
+    {
+      "id": 3,
+      "title": "White Oak Canyon Lower Falls",
+      "city": "Syria",
+      "country": "USA",
+      "address": "WHITE OAK CANYON LOWER FALLS - SYRIA, VA",
+      "tag": "Hiking"
+    },
+    {
+      "id": 4,
+      "title": "Pyramids of Giza",
+      "city": "Cairo",
+      "country": "Egypt",
+      "address": "Historic"
+    }
+  ]
 }
