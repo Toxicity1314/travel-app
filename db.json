@@ -170,6 +170,44 @@
         "Historic",
         "Desert"
       ]
+    },
+    {
+      "title": "Lion Cafe",
+      "city": "Tokyo",
+      "country": "Japan",
+      "address": "2 Chome-19-13 Dogenzaka, Shibuya City, Tokyo 150-0043, Japan",
+      "tags": [
+        "Food",
+        " Urban",
+        " Music"
+      ],
+      "image": "https://lh5.googleusercontent.com/p/AF1QipN4J8Wv5JEuIalljZI6nQmrLlVdiZYYylj0R1J3=w408-h272-k-no",
+      "id": 5
+    },
+    {
+      "title": "Tokyo Tower",
+      "city": "Tokyo",
+      "country": "Japan",
+      "address": "4 Chome-2-8 Shibakoen, Minato City, Tokyo 105-0011, Japan",
+      "tags": [
+        "Attraction",
+        " Architecture"
+      ],
+      "image": "https://lh5.googleusercontent.com/p/AF1QipOCrSVKsYW6oAXUUKub2iYEUWOLiSyJYgbKEWDb=w408-h544-k-no",
+      "id": 6
+    },
+    {
+      "title": "Tsukijijogai Market",
+      "city": "Tokyo",
+      "country": "Japan",
+      "address": "4 Chome-13 Tsukiji, Chuo City, Tokyo 104-0045, Japan",
+      "tags": [
+        "Food",
+        " Culture",
+        " Waterfront"
+      ],
+      "image": "https://lh5.googleusercontent.com/p/AF1QipM2DDQKiD5QqxRQRfo2Vwqoq3KyFI7LImXz8rI4=w408-h306-k-no",
+      "id": 7
     }
   ]
 }
