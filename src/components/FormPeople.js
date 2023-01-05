@@ -2,17 +2,8 @@ import React, {useState} from "react";
 import {useNavigate} from "react-router-dom";
 import { Form, Button } from "semantic-ui-react";
 
-function FormPeople({
-    people, 
-    loggedIn, 
-    setLoggedIn, 
-    setPeople, 
-    setCurrentUser, 
-    currentUser
-}) {
-
+function FormPeople({people, loggedIn, setLoggedIn, setPeople, setCurrentUser, currentUser}) {
     const [formData, setFormData] = useState(currentUser)
-    
     let navigate = useNavigate()
 
     const handleSubmit = (e)=>{
@@ -39,10 +30,11 @@ function FormPeople({
                         return person
                     }
                 }))
-                navigate("/")    
+                    
       })
        
-        }else{   
+        }else{ 
+            formData.id = Date.now()  
             fetch('http://localhost:4000/people',{
             method: 'POST',
             headers: { 'Content-Type': 'application/json'},
@@ -55,6 +47,7 @@ function FormPeople({
                 setLoggedIn(!loggedIn)
             })
         }
+        navigate("/")
     }
 
     const handleOnChange = (e)=>{

@@ -70,6 +70,7 @@ function App() {
               setLoggedIn={setLoggedIn}
               currentUser={currentUser}
               setCurrentUser={setCurrentUser}
+              setPeople={setPeople}
             />
           }
         />
@@ -82,6 +83,7 @@ function App() {
               currentUser={currentUser}
               setLoggedIn={setLoggedIn}
               setPeople={setPeople}
+              setCurrentUser={setCurrentUser}
             />
           }
         />
