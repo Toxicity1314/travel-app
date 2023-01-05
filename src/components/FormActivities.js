@@ -10,7 +10,7 @@ function FormActivities({
     const [city, setCity] = useState("")
     const [country, setCountry] = useState("")
     const [address, setAddress] = useState("") // user can paste a google maps link or just the actual address
-    const [tags, setTags] = useState("") // must have comma between tags
+    const [tags, setTags] = useState([]) // must have comma between tags
     const [activitiesImage, setActivitiesImage] = useState("")
 
     const handleActivitiesSubmit = e => {
@@ -66,7 +66,7 @@ function FormActivities({
                         label="tags"
                         placeholder="tags must be separated by commas"
                         name="tags"
-                        onChange={(e) => setAddress(e.target.value)}
+                        onChange={(e) => setTags(e.target.value)}
                     />
                     <Form.Input fluid
                         label="pic"
