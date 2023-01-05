@@ -34,18 +34,20 @@ function App() {
       .then(people => setPeople(people))
   },[])
 
+
+  // FETCH 'places' from db.json, passes down as props
   const [places, setPlaces] = useState([])
   useEffect(() => {
-    fetch("http://localhost:3000/places")
+    fetch("http://localhost:4000/places")
       .then(resp => resp.json())
-      .then(data => setPlaces(data))
+      .then(places => setPlaces(places))
   }, [])
 
   const [activities, setActivities] = useState([])
   useEffect(() => {
-    fetch("http://localhost:3000/activities")
+    fetch("http://localhost:4000/activities")
       .then(resp => resp.json())
-      .then(data => setActivities(data))
+      .then(activities => setActivities(activities))
   }, [])
 
   return (
@@ -90,6 +92,7 @@ function App() {
           path='/places' 
           element={<Places
             places={places}
+            setPlaces={setPlaces}
             />
           }
         />
@@ -98,6 +101,7 @@ function App() {
           path='/activities' 
           element={<Activities
             activities={activities}
+            setActivities={setActivities}
             />
           }
         />
