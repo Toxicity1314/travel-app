@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-import { PlacesCard, Button } from "./styles";
 import FormPlaces from "./FormPlaces"
+import PlacesIndividual from "./PlacesIndividual";
 // import SearchPlaces from "./SearchPlaces"
 
 
@@ -18,18 +18,6 @@ function Places({
     place.name.toLowerCase().incluces(searchPlaces.toLowerCase())
   })
 
-
-  // Mark as 'Been' button
-const [markAsBeen, setMarkAsBeen] = useState(false)
-function handleBeenClick() {
-  setMarkAsBeen((markAsBeen) => !markAsBeen)
-}
-
-// Mark as 'Want [to] Go' button
-const [markWantGo, setMarkWantGo] = useState(false)
-function handleWantGoClick() {
-  setMarkWantGo((markWantGo) => !markWantGo)
-}
 
   // FORM set up <PlacesForm /> funcionality
   function handleAddPlaces(newPlace) {
@@ -55,29 +43,7 @@ function handleWantGoClick() {
 
   let placesCard
 placesCard = places.map(place => {
-  return (
-    <PlacesCard 
-      className="card"
-      as='ul'
-      key={place.id}
-      >
-      
-      <img 
-        src={place.image} 
-        alt="pic"/>
-      <h4>{place.city},</h4>
-      <span>{place.country}</span>
-
-      <Button 
-        onClick={handleBeenClick}>{markAsBeen ? "✅" : "❌"}
-      </Button>
-
-      <Button 
-        onClick={handleWantGoClick}>{markWantGo ? "🤩" : "🤔"}
-      </Button>
-      
-    </PlacesCard>
-)
+  return (<PlacesIndividual place={place}/>)
 })
 
   return (
