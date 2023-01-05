@@ -6,7 +6,7 @@ function Home(props) {
   return (
     <div>
       <h1 style={{textAlign: "center"}}>Welcome to the travel App {props.loggedIn ? props.currentUser.name: ""}</h1>
-      {props.loggedIn ? <People people={props.currentUser} currentUser={props.currentUser}/>:<LogIn {...props} />}
+      {props.loggedIn ? <People people={props.people} currentUser={props.currentUser} setLoggedIn={props.setLoggedIn} setCurrentUser={props.setCurrentUser} setPeople={props.setPeople}/>:<LogIn {...props} />}
     </div>
   );
 }

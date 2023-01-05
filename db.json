@@ -2,7 +2,7 @@
   "people": [
     {
       "id": 1,
-      "name": "Sean",
+      "name": "Sean Welsh",
       "city": "Fredericksburg",
       "username": "Sean1",
       "password": "Sean2",
@@ -25,19 +25,6 @@
       "places": [
         "DC",
         "Puerto Rico"
-      ]
-    },
-    {
-      "id": 3,
-      "name": "asdf",
-      "city": "fdsf",
-      "username": "eeee",
-      "password": "gsdfa",
-      "photo": "asdfas",
-      "places": [
-        "hex",
-        "dec",
-        "then"
       ]
     }
   ],

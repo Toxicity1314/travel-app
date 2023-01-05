@@ -30,10 +30,11 @@ function FormPeople({people, loggedIn, setLoggedIn, setPeople, setCurrentUser, c
                         return person
                     }
                 }))
-                navigate("/")    
+                    
       })
        
-        }else{   
+        }else{ 
+            formData.id = Date.now()  
             fetch('http://localhost:4000/people',{
             method: 'POST',
             headers: { 'Content-Type': 'application/json'},
@@ -46,6 +47,7 @@ function FormPeople({people, loggedIn, setLoggedIn, setPeople, setCurrentUser, c
                 setLoggedIn(!loggedIn)
             })
         }
+        navigate("/")
     }
 
     const handleOnChange = (e)=>{
