@@ -24,7 +24,11 @@
       "photo": "https://media.licdn.com/dms/image/C4E03AQG6l11IxkDizw/profile-displayphoto-shrink_800_800/0/1607421640755?e=1678320000&v=beta&t=cNc0WYTd5Jt8ksAVjTl9KVSUNqmcSyt13aQP8RtfEP8",
       "places": [
         "DC",
-        "Puerto Rico"
+        "Puerto Rico",
+        "Italy",
+        "Spain",
+        "Denmark",
+        "Cuba"
       ]
     },
     {
@@ -99,12 +103,6 @@
       "city": "Tokyo",
       "country": "Japan",
       "image": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/gettyimages-1058360160-1-1624796189.jpg?crop=1.00xw:0.756xh;0,0.244xh&resize=980:*"
-    },
-    {
-      "city": "asdf",
-      "country": "fff",
-      "image": "eee",
-      "id": 7
     }
   ],
   "activities": [
@@ -155,15 +153,6 @@
         "Historic",
         "Desert"
       ]
-    },
-    {
-      "title": "asdf",
-      "city": "eee",
-      "country": "rrr",
-      "address": "eee",
-      "tags": "",
-      "image": "ggg",
-      "id": 5
     }
   ]
 }
