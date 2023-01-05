@@ -12,7 +12,8 @@
         "Massachusetts",
         "St Lucia",
         "Colorado",
-        "Florida"
+        "Florida",
+        "San Juan"
       ]
     },
     {
@@ -112,6 +113,12 @@
       "country": "South Africa",
       "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/14/10/2e/1e/cape-town.jpg?w=700&h=-1&s=1",
       "id": 7
+    },
+    {
+      "city": "Bermuda",
+      "country": "Bermuda",
+      "image": "https://www.meonvalleytravel.com/wp-content/uploads/2017/11/Bermuda-Pink-Sand-Beach-768x576.jpg",
+      "id": 8
     }
   ],
   "activities": [

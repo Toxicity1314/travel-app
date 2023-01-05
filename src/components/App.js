@@ -71,6 +71,7 @@ function App() {
               currentUser={currentUser}
               setCurrentUser={setCurrentUser}
               setPeople={setPeople}
+              places={places}
             />
           }
         />
@@ -93,6 +94,8 @@ function App() {
           element={<Places
             places={places}
             setPlaces={setPlaces}
+            currentUser={currentUser}
+            setCurrentUser={setCurrentUser}
             />
           }
         />

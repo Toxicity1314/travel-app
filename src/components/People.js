@@ -8,8 +8,6 @@ function People({people, currentUser, setLoggedIn, setPeople, setCurrentUser}) {
   const [clicked, setClicked] = useState(false)
   const {pathname} = useLocation()
 
-  console.log(pathname)
-
   const handleClick = ()=>{
 
     if (clicked === false){
@@ -37,6 +35,9 @@ function People({people, currentUser, setLoggedIn, setPeople, setCurrentUser}) {
   let peopleCard
   if(pathname === "/people"){
   peopleCard = people.map(people =>{
+    if(people.id === currentUser.id){
+      people = currentUser
+    }
     return(
     <PeopleCard as={'ul'} key={people.id}>
       <img title='User Photo'src={people.photo} alt="profile"/>
@@ -68,9 +69,6 @@ function People({people, currentUser, setLoggedIn, setPeople, setCurrentUser}) {
         <div>{currentUser.name}</div>
         <div className='niceTextSmaller'>📍{currentUser.city}</div>
         <br/>
-        <div className='easyTextItalic'>Top Destinations:
-          <ul >{currentUser.places.map(place=><li key={place}>{place}</li>)}</ul>
-        </div>
         <br/>
         <br/>
         {currentUser.name === currentUser.name ? <Button className='easyTextSmallBold' as={Link} to="/formPeople">edit info</Button>:""}
