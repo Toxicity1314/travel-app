@@ -39,38 +39,38 @@ function FormActivities({
             <Form onSubmit={handleActivitiesSubmit}>
                 <Form.Group widths="equal">
                     <Form.Input fluid
-                        label="title"
+                        label="Title"
                         placeholder="activity title"
                         name="title"
                         onChange={(e) => setTitle(e.target.value)}
                     />
                     <Form.Input fluid
                         label="City"
-                        placeholder="City"
+                        placeholder="city"
                         name="City"
                         onChange={(e) => setCity(e.target.value)}
                     />
                     <Form.Input fluid
                         label="Country"
-                        placeholder="Country"
+                        placeholder="country"
                         name="Country"
                         onChange={(e) => setCountry(e.target.value)}
                     />
                     <Form.Input fluid
-                        label="address"
+                        label="Address"
                         placeholder="address"
                         name="address"
                         onChange={(e) => setAddress(e.target.value)}
                     />
                     <Form.Input fluid
-                        label="tags"
-                        placeholder="tags must be separated by commas"
+                        label="Tags (separate with commas)"
+                        placeholder="tag,tag,tag"
                         name="tags"
                         onChange={(e) => setTags(e.target.value)}
                     />
                     <Form.Input fluid
-                        label="pic"
-                        placeholder="pic of activity"
+                        label="Image Link"
+                        placeholder="link to image"
                         name="pic"
                         onChange={(e) => setActivitiesImage(e.target.value)}
                     />

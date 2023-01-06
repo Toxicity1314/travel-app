@@ -57,11 +57,7 @@ function Activities({ activities, setActivities }) {
   return (
     <div>
       <div
-        style={{
-          display: "flex",
-          margin: "1em",
-          flexWrap: "wrap",
-        }}
+        className="container"
       >
         {activitiesCard}
       </div>

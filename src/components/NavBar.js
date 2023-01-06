@@ -21,7 +21,7 @@ function NavBar({loggedIn, setLoggedIn, setCurrentUser}) {
   }
 if(loggedIn){
   return (
-    <header>
+    <header className="nav">
         <Button as={NavLink} to="/">home</Button>
         <Button as={NavLink} to="/people">people</Button>
         <Button as={NavLink} to="/places">places</Button>

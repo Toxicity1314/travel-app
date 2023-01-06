@@ -6,7 +6,7 @@ export default styled.div`
     border: hidden;
     border-radius: 10px;
     background: #ffc09f;
-    text-align: center;
+    text-align: left;
     
     img{
         display: block;
