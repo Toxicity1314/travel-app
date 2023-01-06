@@ -69,9 +69,8 @@ function PlacesIndividual({place, currentUser, setCurrentUser}){
     return(
         <PlacesCard 
             className="card"
-            as='ul'
             key={place.id}
-            style={{flexWrap:5}}>
+            >
             
             <img 
             src={place.image} 
@@ -81,10 +80,7 @@ function PlacesIndividual({place, currentUser, setCurrentUser}){
 
             {showBeen}
             {showInterested}
-
-
             
-        
         </PlacesCard>
 )}
 

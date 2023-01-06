@@ -8,7 +8,7 @@ export default styled.div`
     padding-left: -1em; */
     border: hidden;
     border-radius: 10px;
-    background: #E9E186;
+    background: #adf7b6;
     text-align: left;
     
     

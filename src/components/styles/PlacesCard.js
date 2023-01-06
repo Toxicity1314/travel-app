@@ -5,7 +5,7 @@ export default styled.div`
     padding: 2em;
     border: hidden;
     border-radius: 10px;
-    background: #E9E186;
+    background: #ffc09f;
     text-align: center;
     
     img{
@@ -13,7 +13,7 @@ export default styled.div`
         margin-left: -20;
         margin-right: -20;
         margin-bottom: 10px;
-        width: 50%;
+        width: 20%;
         height: 15em;
         border-radius:10px;
         width: 15em;
