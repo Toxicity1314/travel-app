@@ -22,7 +22,15 @@ function People({people, currentUser, setLoggedIn, setPeople, setCurrentUser}) {
         setLoggedIn(false)
         setPeople(people.filter(person=>{
           if(person.id ===currentUser.id){
-            setCurrentUser(null)
+            setCurrentUser({
+              id:"",
+              name:"",
+              city: "",
+              username: "",
+              password: "",
+              photo: "",
+              places:[]
+          })
             return false
           }else{
             return true
