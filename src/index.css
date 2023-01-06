@@ -19,3 +19,29 @@ html {
     flex-wrap: wrap;
 }
 
+.container {
+    display: flex;
+    margin: 1em;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.ui {
+    display: flex;
+    margin: 1em;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.nav {
+    font-size: larger;
+}
+
+.form {
+    float:left;
+
+}
+
+.Logo {
+    border-radius: 150px
+}

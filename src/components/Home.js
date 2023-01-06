@@ -22,7 +22,8 @@ function Home(props) {
     />
   ));
 
-  console.log(places);
+  const travelGif = ("http://24.media.tumblr.com/tumblr_lu5fxnLtIF1qzolrpo1_1280.gif")
+
   return (
     <div>
       <br />
@@ -30,15 +31,14 @@ function Home(props) {
         ""
       ) : (
         <img
-          src={
-            "https://i.pinimg.com/originals/8e/bb/96/8ebb96be428c20e1418863602b9c4ae2.gif"
-          }
+          className="Logo"
+          src={travelGif}
           alt="travelGif"
         />
       )}
       <br />
       <h1 style={{ textAlign: "center", fontSize: "larger" }}>
-        Welcome to 'travelApp', {props.loggedIn ? props.currentUser.name : ""}
+        Welcome to 'travelApp' {props.loggedIn ? props.currentUser.name : ""}
       </h1>
       <br />
       <br />
@@ -53,7 +53,7 @@ function Home(props) {
       ) : (
         <LogIn {...props} />
       )}
-      <div>places I have visited</div> 
+      <div></div> 
       <Card>
         {placesVisited}
       </Card>

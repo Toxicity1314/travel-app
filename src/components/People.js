@@ -78,7 +78,9 @@ function People({people, currentUser, setLoggedIn, setPeople, setCurrentUser}) {
   }
 
   return (
-    <div style={{
+    <div 
+    className="container"
+    style={{
       display:"flex", 
       margin: "1em",
       flexWrap: "wrap"

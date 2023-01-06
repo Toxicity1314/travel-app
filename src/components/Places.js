@@ -15,15 +15,21 @@ function Places({
 
   let placesCard
 placesCard = places.map(place => {
-  return (<PlacesIndividual key={place.id} place={place} currentUser={currentUser} setCurrentUser={setCurrentUser}/>)
+  return (
+    <PlacesIndividual 
+      key={place.id} 
+      place={place} 
+      currentUser={currentUser} 
+      setCurrentUser={setCurrentUser}
+    />
+    )
 })
 
   return (
     <div>
-      <div style={{
-        display:"flex", 
-        margin: "1em", 
-        flexWrap:"wrap"}}>
+      <div 
+      className="container"
+        >
           {placesCard}
       </div>
       <FormPlaces 
