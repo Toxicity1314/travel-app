@@ -68,3 +68,32 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+```
+travel-app
+└─ src
+   ├─ components
+      ├─ App.js((loggedIn, currentUser, people, places, activities))
+      │  ├─ NavBar.js(loggedIn, setLoggedIn, setCurrentUser)
+      │  ├─ Home.js(people, loggedIn, setLoggedIn, currentUser, setCurrentUser, setPeople,places)
+      │  │  ├─ LogIn.js(setCurrentUser, people, setLoggedIn, loggedIn)
+      │  │  ├─ PlacesIndividual.js(currentUser, setCurrentUser)
+      │  │  └─ People.js(people, currentUser, setLoggedIn, setPeople, setCurrentUser)
+      │  ├─People.js(people, currentUser, setLoggedIn, setPeople, setCurrentUser)        
+      │  ├─ Places.js(places, setPlaces, currentUser, setCurrentUser)
+      │  │  ├─ PlacesIndividual.js(currentUser, setCurrentUser)
+      │  │  ├─ FormPlaces.js(places, setPlaces)
+      │  ├─ Activities.js(activities, setActivities)     
+      │  │  ├─ ActivitiesIndividual.js
+      │  │  ├─ FormActivities.js(activities, setActivities)
+      │  ├─ FormPeople.js(people, loggedIn, setLoggedIn, setPeople, setCurrentUser, currentUser)
+      ├─ styles
+      │  ├─ ActivitiesCard.js
+      │  ├─ Button.js
+      │  ├─ PeopleCard.js
+      │  ├─ PlacesCard.js
+      │  └─ index.js
+      ├─ index.css
+      └─ index.js
+
+```
